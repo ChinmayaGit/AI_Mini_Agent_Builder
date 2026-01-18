@@ -1,0 +1,49 @@
+.app-root {
+  height: 100vh;
+  width: 100vw;
+  background: #141414; /* dark canvas */
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Global output panel (bottom-right) */
+.output-panel {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  width: 360px;
+  max-height: 40vh;
+  background: #111316;
+  border: 1px solid #22262d;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1200;
+}
+
+.output-header {
+  padding: 8px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #cfe3ff;
+  background: #0d0f12;
+  border-bottom: 1px solid #22262d;
+}
+
+.output-body {
+  padding: 8px 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  color: #d7dbe7;
+  overflow: auto;
+}
+
+.output-line {
+  line-height: 1.35;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding: 2px 0;
+  color: #d7dbe7;
+}

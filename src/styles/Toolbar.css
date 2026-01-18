@@ -1,0 +1,65 @@
+/* Toolbar container */
+.toolbar {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1f1f1f;
+  border: 1px solid #2c2c2c;
+  border-radius: 14px;
+  padding: 8px 12px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  align-items: center;
+}
+
+/* Grouping */
+.toolbar-left,
+.toolbar-right,
+.toolbar-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.toolbar-right,
+.toolbar-actions {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #2c2c2c;
+}
+
+/* Unified button style for ALL buttons */
+.tool,
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 120ms ease, background 120ms ease, border 120ms ease;
+  color: #ddd;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.tool:hover,
+.btn:hover {
+  background: #343434;
+  border-color: #3f3f3f;
+  transform: translateY(-1px);
+}
+
+.tool:active,
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Original icon/label sizing */
+.tool-emoji { font-size: 16px; }
+.tool-label { font-size: 13px; color: #ddd; }

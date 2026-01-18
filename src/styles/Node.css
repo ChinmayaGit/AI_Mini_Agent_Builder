@@ -1,0 +1,126 @@
+.node-shell {
+  width: 220px;
+  height: 90px;
+  background: transparent;
+  position: relative;
+}
+
+.node-body {
+  width: 100%;
+  height: 100%;
+  background: #24273a;
+  border: 2px solid #4f9eed;
+  border-radius: 14px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.node-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.node-icon { font-size: 18px; }
+.node-text { font-size: 14px; }
+
+/* Content layout */
+.node-content { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+.ui-row { display: flex; gap: 8px; align-items: center; }
+.ui-col { display: flex; flex-direction: column; gap: 6px; }
+
+.input {
+  background: #1b1b1b;
+  color: #ddd;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.hint { color: #aab; font-size: 12px; }
+
+/* Status badge */
+.badge {
+  margin-left: auto;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid #333;
+  background: #1b1b1b;
+  color: #bbb;
+}
+.badge-running { border-color: #3a66a7; color: #a6c8ff; }
+.badge-success { border-color: #2e7d32; color: #9ee2a1; }
+.badge-error { border-color: #a73a3a; color: #f0a7a7; }
+
+/* Per-node output box */
+.node-output {
+  margin-top: 8px;
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 6px 8px;
+  max-height: 110px;
+  overflow: auto;
+  font-size: 12px;
+  color: #cfd3ff;
+}
+
+.node-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #cfd3ff;
+}
+
+.node-pre {
+  margin: 6px 0 0 0;
+  white-space: pre;
+  overflow: auto;
+  color: #b9ffc7;
+}
+
+/* Handles */
+.handle {
+  position: absolute;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background: #4f9eed !important;
+  border: 2px solid #ffffff !important;
+  transition: box-shadow 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+.handle-top { top: -6px; }
+.handle-bottom { bottom: -6px; }
+.handle-left { left: -6px; }
+.handle-right { right: -6px; }
+
+/* Subtle hover (no pop) */
+.handle:hover {
+  box-shadow: 0 0 6px rgba(79, 158, 237, 0.5);
+}
+
+/* Drag-from and valid target glow (no scale) */
+.react-flow__handle-connecting {
+  box-shadow: 0 0 10px rgba(79, 158, 237, 0.7);
+}
+.react-flow__handle-valid {
+  box-shadow: 0 0 14px 3px rgba(80, 220, 130, 0.85);
+  background: #50dc82 !important;
+  border-color: #eafff1 !important;
+}
+
+.node-text.editable-label {
+  cursor: text;
+  border-bottom: 1px dashed transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.node-text.editable-label:focus {
+  border-bottom: 1px dashed #4f9eed;
+  background: rgba(79, 158, 237, 0.08);
+}
