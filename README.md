@@ -1,4 +1,6 @@
-# React + Vite
+# AI_Mini_Agent_Builder
+
+<img src="[Screenshot-1.png](https://raw.githubusercontent.com/ChinmayaGit/AI_Mini_Agent_Builder/refs/heads/main/Screenshot-1.png)" width=80% height=80%>
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
